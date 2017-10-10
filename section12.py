@@ -6,7 +6,7 @@ class NetworkDevice(object):
         self.ip = ip
         self.user = user
         self.pw = pw
-        self.__level = "critical"
+        self.level = "critical"
 
 
 class IOSDevice(NetworkDevice):
@@ -16,7 +16,7 @@ class IOSDevice(NetworkDevice):
         self.os = "Cisco IOS-XE"
 
     def print_level(self):
-        print self.__level
+        print self.level
 
 class XRDevice(NetworkDevice):
 
